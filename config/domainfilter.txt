@@ -1,2 +1,4 @@
 # blocked sites
 badsite.org
+youtube.com
+gmail.com
