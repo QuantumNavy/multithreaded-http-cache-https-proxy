@@ -87,7 +87,7 @@ Filters are now Loaded 1 blocked domains
 ## Architecture Diagram
 ```
 +--------+        +--------------------+        +-----------------------------+
-| Client | -----> |   Proxy Server     | -----> | Remote Requested Server     |
+| Client | -----> |   Proxy Server     | -----> | Origin Server               |
 |        | <----- |                    | <----- | (HTTP GET / HTTPS CONNECT)  |
 +--------+        +--------------------+        +-----------------------------+
                          |
