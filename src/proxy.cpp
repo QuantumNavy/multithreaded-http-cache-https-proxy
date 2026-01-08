@@ -626,7 +626,7 @@ void handle_client(int client_fd, LRUCache& cache, DomainFilter& filter, Logger&
 int main() {
 // loading config file
     Config config;
-    config.load("proxy.conf");
+    config.load("config/proxy.conf");
     config.print();
 
     client_sem = dispatch_semaphore_create(config.max_clients);
