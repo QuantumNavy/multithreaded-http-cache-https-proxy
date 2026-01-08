@@ -86,10 +86,10 @@ Filters are now Loaded 1 blocked domains
 ```
 ## Architecture Diagram
 ```
-+--------+        +--------------------+        +----------------+
-| Client | -----> |   Proxy Server     | -----> | Remote Server  |
-| (curl) | <----- | (This Project)     | <----- | (HTTP / HTTPS) |
-+--------+        +--------------------+        +----------------+
++--------+        +--------------------+        +-----------------------------+
+| Client | -----> |   Proxy Server     | -----> | Remote Requested Server     |
+|        | <----- |                    | <----- | (HTTP GET / HTTPS CONNECT)  |
++--------+        +--------------------+        +-----------------------------+
                          |
                          |-- Domain Filter
                          |-- LRU Cache
